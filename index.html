@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/yfb5bzx.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- THIS IS THE BACKGROUND IMAGE -->
+        <img id="background" onclick="stopFocus()"
+            src="https://user-images.githubusercontent.com/82774916/115155504-3ad71700-a04e-11eb-867a-34234fac0eac.jpeg"
+            usemap="#image-map">
+
+        <!-- USE THIS WEBSITE TO GENERATE THIS PART: https://www.image-map.net/ -->
+        <map name="image-map">
+            <!-- REMOVE EVERY ATTRIBUTE THE WEBSITE PUTS ON THESE TAGS EXCEPT coords AND shape
+        THEN ADD onmouseover, onmouseout, AND onclick LIKE BELOW (BUT WITH DIFFERENT NAMES, NOT ALWAYS 'can') 
+        LASTLY, GIVE THIS AND id EQUAL TO "<name>-area" -->
+            <!-- <area id="can-area"
+                coords="430,466,500,390,519,380,567,382,651,397,660,410,657,422,724,527,721,540,677,601,648,606,581,575,550,525,517,494,476,488,444,482"
+                shape="poly" onmouseover="startHover('can')" onmouseout="stopHover('can')"
+                onclick="startFocus('can')" /> -->
+            <area id="yellowBag-area"
+                coords="1467,1062,1476,1149,1513,1332,1548,1468,1633,1455,1642,1420,1694,1380,1722,1355,1741,1361,1772,1412,1801,1430,1807,1406,1809,1372,1813,1345,1809,1324,1819,1306,1851,1297,1874,1263,1866,1246,1872,1198,1881,1180,1882,1164,1868,1151,1832,1084,1865,1039,1897,1025,1902,997,1979,970,2016,967,2029,942,2032,926,1505,1037"
+                shape="poly" onmouseover="startHover('yellowBag')" onmouseout="stopHover('yellowBag')"
+                onclick="startFocus('yellowBag')" />
+            <area id="deflatedBall-area"
+                coords="2020,1795,2027,1753,2044,1692,2073,1590,2108,1509,2165,1517,2227,1522,2297,1528,2368,1559,2409,1589,2439,1622,2486,1676,2524,1753,2549,1798"
+                shape="poly" onmouseover="startHover('deflatedBall')" onmouseout="stopHover('deflatedBall')"
+                onclick="startFocus('deflatedBall')" />
+            <area id="hairBag-area"
+                coords="1109,1159,1159,1201,1220,1248,1299,1319,1394,1419,1382,1491,1322,1470,1173,1341,1155,1349,1118,1336,1114,1297,1070,1260,1068,1207"
+                shape="poly" onmouseover="startHover('hairBag')" onmouseout="stopHover('hairBag')"
+                onclick="startFocus('hairBag')" />
+            <area id="blueFabric-area"
+                coords="362,22,399,63,443,59,492,39,530,66,544,111,535,166,516,181,496,178,483,198,399,213,350,262,308,250,277,255,239,257,207,266,194,194,178,145,162,113,163,62,204,48"
+                shape="poly" onmouseover="startHover('blueFabric')" onmouseout="stopHover('blueFabric')"
+                onclick="startFocus('blueFabric')" />
+            <area id="straw-area" coords="1144,307,1176,219,1218,107,1228,-2,1262,-2,1262,73,1204,236" shape="poly"
+                onmouseover="startHover('straw')" onmouseout="stopHover('straw')" onclick="startFocus('straw')" />
+            <area id="yellowStraw-area"
+                coords="2383,610,2179,496,2125,470,1983,447,1899,427,1777,393,1626,366,1487,323,1498,299,1645,343,1827,383,1944,403,2107,441,2187,453,2309,534,2399,579"
+                shape="poly" onmouseover="startHover('yellowStraw')" onmouseout="stopHover('yellowStraw')"
+                onclick="startFocus('yellowStraw')" />
+            <area id="pillPack-area"
+                coords="2012,1067,2045,1051,2085,1047,2135,1056,2170,1078,2211,1118,2206,1163,2199,1209,2183,1248,2170,1276,2118,1251,2093,1233,2072,1224,2042,1213,2022,1139"
+                shape="poly" onmouseover="startHover('pillPack')" onmouseout="stopHover('pillPack')"
+                onclick="startFocus('pillPack')" />
+            <area id="coffeeLid-area"
+                coords="1443,1256,1472,1286,1512,1345,1525,1438,1517,1477,1487,1459,1480,1433,1468,1389,1454,1379,1440,1373,1367,1278,1399,1255"
+                shape="poly" onmouseover="startHover('coffeeLid')" onmouseout="stopHover('coffeeLid')"
+                onclick="startFocus('coffeeLid')" />
+            <area id="snackPack-area"
+                coords="551,1228,595,1231,631,1208,732,1097,796,1024,821,993,830,975,846,966,876,924,901,892,910,869,949,815,984,782,1021,734,1047,696,1065,655,1041,653,1023,621,986,614,965,612,936,638,881,615,837,612,809,632,778,674,756,693,757,721,726,767,693,815,675,807,649,832,621,858,599,890,570,926,544,965,528,1003,502,1017,485,1052,474,1080,430,1122"
+                shape="poly" onmouseover="startHover('snackPack')" onmouseout="stopHover('snackPack')"
+                onclick="startFocus('snackPack')" />
+            <area id="styroFoam1-area"
+                coords="715,1125,747,1117,794,1114,830,1123,853,1142,876,1122,898,1154,893,1208,890,1257,893,1317,894,1370,871,1403,828,1453,783,1441,745,1424,732,1397,742,1339,725,1324,706,1296,675,1258,660,1216,658,1191,685,1159"
+                shape="poly" onmouseover="startHover('styrofoam1')" onmouseout="stopHover('styrofoam1')"
+                onclick="startFocus('styrofoam1')" />
+            <area id="yellowFoam-area"
+                coords="208,293,261,337,281,381,308,465,319,499,346,540,372,604,352,653,305,664,259,651,233,626,198,579,213,507,220,437,233,419,218,357"
+                shape="poly" onmouseover="startHover('yellowFoam')" onmouseout="stopHover('yellowFoam')"
+                onclick="startFocus('yellowFoam')" />
+            <area id="grainyFoam-area"
+                coords="265,1028,297,1033,378,928,456,966,460,1017,464,1064,466,1090,423,1120,470,1163,457,1198,429,1251,386,1252,337,1226,320,1175,279,1125,246,1054"
+                shape="poly" onmouseover="startHover('grainyFoam')" onmouseout="stopHover('grainyFoam')"
+                onclick="startFocus('grainyFoam')" />
+            <area id="styrofoam2-area"
+                coords="183,1417,274,1381,395,1318,377,1268,346,1247,320,1216,279,1179,263,1176,224,1227,168,1319,153,1359"
+                shape="poly" onmouseover="startHover('styrofoam2')" onmouseout="stopHover('styrofoam2')"
+                onclick="startFocus('styrofoam2')" />
+            <area id="candyWrapper-area"
+                coords="363,274,420,314,416,375,383,380,355,347,336,351,315,350,291,333,268,313,242,294,212,267,267,257,317,255"
+                shape="poly" onmouseover="startHover('candyWrapper')" onmouseout="stopHover('candyWrapper')"
+                onclick="startFocus('candyWrapper')" />
+        </map>
+
+        <!-- ADD AN img AND div LIKE THIS FOR EACH CLICKABLE THING
+      MAKE SURE TO GIVE THEM id LIKE BELOW -->
+        <!-- <img id="can"
+            src="https://user-images.githubusercontent.com/15111129/110058203-496eb500-7da5-11eb-89e8-042c9a2d26d3.png"
+            alt="">
+        <div class="info" id="can-info">
+            <h2>Garbage can</h2>
+            <p>some words</p>
+        </div>
+    -->
+        <img class="image" id="yellowBag"
+            src="https://user-images.githubusercontent.com/82774916/115155730-3101e380-a04f-11eb-92ed-5ec1c5123983.png"
+            alt="">
+        <div class="info" id="yellowBag-info">
+            <h2>Instant Coffee Mix Bag</h2>
+            <p>Made of several common materials such as...</p>
+            <ul>
+                <li>Polypropylene (one of the most commonly used plastics).
+                    <ul>
+                        <li>Found in: clothing, piping, rigid plastic bottles, yarn / synthetic
+                            textiles, lunchboxes and food containers, autoparts, etc.
+                        </li>
+                        <li>Produces microplastics that are carcinogenic.</li>
+                        <li id="bold">Can be recycled, but only around 1% is recyclable because of cost and use of
+                            multi-material lamenants (such as this), which cannot be separated for recycling.
+                        </li>
+                    </ul>
+                </li>
+                <li>Polyethylene (the most common plastic used today).
+                    <ul>
+                        <li>Breaks down in the sun and releases greenhouse gases.</li>
+                        <li>Used in: liquid product containers, toys, fast food cups and packaging, utensils, polyester,
+                            shopping bags, garbage bins, etc.
+                        </li>
+                    </ul>
+                </li>
+                <li>Aluminum (100% infinitely recyclable).</li>
+            </ul>
+            <p>The lamenant used in this packaging is unrecyclable by design.</p>
+        </div>
+
+        <img class="image" id="deflatedBall"
+            src="https://user-images.githubusercontent.com/82774916/115155828-99e95b80-a04f-11eb-9ca5-aa061ab03e4b.png"
+            alt="">
+        <div class="info" id="deflatedBall-info">
+            <h2>Deflated Playground Ball</h2>
+            <p>Made of synthetic materials such as...</p>
+            <ul>
+                <li>Nylon (one of the most common synthetic fabrics).
+                    <ul>
+                        <li>Found in: Jackets, shirts, sweaters, pants, shoes, sportswear, hats, gloves, socks, sports
+                            equipment, fishing nets, tents, backs, rope, carpeting, upholstery, furniture, etc.
+                        </li>
+                        <li id="bold">
+                            Makes up for 10% of ocean debris.
+                        </li>
+                        <li>
+                            Can be repurposed and recycled by respinning and breaking down existing fibers.
+                            Companies like patagonia, Timbuk2, and Aquafil work repurposing nylon waste into new
+                            materials.
+                        </li>
+                    </ul>
+                <li>Polyester / Polyethylene (the most common plastic used today).
+                    <ul>
+                        <li>Breaks down in the sun and releases greenhouse gases.</li>
+                        <li>Used in: liquid product containers, toys, fast food cups and packaging, utensils,
+                            polyester,
+                            shopping bags, garbage bins, etc.
+                        </li>
+                        <li>Durable and recyclable, but only around 8% is recycled
+                        </li>
+                    </ul>
+                </li>
+                <li>Polyurethane.
+                    <ul>
+                        <li>Found in: tape, toys, paint/resins, shoes, sports equipment, industrial parts, rubber
+                            gloves, boots, wheels, automotive parts.
+                        </li>
+                        <li>Multiple different methods of recycling: chemical and mechanical.</li>
+                        <li id="bold">Most recycling is mechanical which is cheaper and results in a lower-value product
+                            Only around 10% or polyurethane is recycled.</li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+        <img class="image" id="hairBag"
+            src="https://user-images.githubusercontent.com/82774916/115155911-f187c700-a04f-11eb-85be-8a9530047223.png"
+            alt="">
+        <div class="info" id="hairBag-info">
+            <h2>Hair Product Packaging</h2>
+            <p>Made of common plastics such as...</p>
+            <ul>
+                <li>Polystyrene (commonly used to make styrofoam).
+                    <ul>
+                        <li>Found in: food packaging/containers, styrofoam of all kinds (cups, packaging, insulation,
+                            takeout containers, packing peanuts).
+                        </li>
+                        <li>Commonly recycled into fake-wood that can be seen used in park benches, and fencing.</li>
+                        <li id="bold">
+                            Not easily recyclable: requires specials centralized facility with an estimated 12%
+                            recycling rate.
+                        </li>
+                        <li id="bold">
+                            Makes up 60%-80% of marine litter.
+                        </li>
+                    </ul>
+                <li>Polyethylene (the most common plastic used today).
+                    <ul>
+                        <li>Breaks down in the sun and releases greenhouse gases.</li>
+                        <li>Used in: liquid product containers, toys, fast food cups and packaging, utensils,
+                            polyester,
+                            shopping bags, garbage bins, etc.
+                        </li>
+                        <li id="bold">Durable and recyclable, but only around 8% is recycled
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>All of this material potential is wasted as this package finds itself in the 80+% of plastics that live
+                only one life.</p>
+        </div>
+
+        <img class="image" id="blueFabric"
+            src="https://user-images.githubusercontent.com/82774916/115155967-298f0a00-a050-11eb-9844-3007a3787f41.png"
+            alt="">
+        <div class="info" id="blueFabric-info">
+            <h2>Blue Fleece Fabric</h2>
+            <p>Fleece is a polyester (polyethylene) based fabric...</p>
+            <ul>
+                <li>Polyethylene (the most common plastic used today).
+                    <ul>
+                        <li>Breaks down in the sun and releases greenhouse gases.</li>
+                        <li>Used in: liquid product containers, toys, fast food cups and packaging, utensils,
+                            polyester,
+                            shopping bags, garbage bins, etc.
+                        </li>
+                        <li id="bold">Durable and recyclable, but only around 8% is recycled
+                        </li>
+                        <li id="bold">Non-biodegradable and highly toxic.
+                        </li>
+                        <li>
+                            High-density and low-density polyethylene can be recycled with the former theoretically able
+                            to be recycled 10 times at least.
+                        </li>
+                        <li>Material must be clean and dry to be recycled.</li>
+                        <li>
+                            Combinations of different plastics with different melting points in products makes recycling
+                            very difficult, as the materials are must be melted down and re-constructed.
+                            Food residue on packaging reduces recyclable material to the landfill.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>The versatility of plastics like polyethylene is clear, but their life spans are harmfully being cut
+                short.
+            </p>
+        </div>
+
+        <img class="image" id="straw"
+            src="https://user-images.githubusercontent.com/82774916/115156016-60652000-a050-11eb-85c1-3afd46b1abb1.png"
+            alt="">
+        <div class="info" id="straw-info">
+            <h2>Plastic Drinking Straw</h2>
+            <p>Made of common plastics such as...</p>
+            <ul>
+                <li>Polypropylene (one of the most commonly used plastics).
+                    <ul>
+                        <li>Found in: clothing, piping, rigid plastic bottles, yarn / synthetic
+                            textiles, lunchboxes and food containers, autoparts, etc.
+                        </li>
+                        <li>Produces microplastics that are carcinogenic.</li>
+                        <li id="bold">Can be recycled, but only around 1% is recyclable because of cost and use of
+                            multi-material lamenants (such as this), which cannot be separated for recycling.
+                        </li>
+                    </ul>
+                </li>
+                <li>Polyethylene (the most common plastic used today).
+                    <ul>
+                        <li>Breaks down in the sun and releases greenhouse gases.</li>
+                        <li>Used in: liquid product containers, toys, fast food cups and packaging, utensils, polyester,
+                            shopping bags, garbage bins, etc.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>All of this material potential is wasted as this package finds itself in the 80+% of plastics that live
+                only one life.</p>
+        </div>
+
+        <img class="image" id="yellowStraw"
+            src="https://user-images.githubusercontent.com/82774916/115156057-88ed1a00-a050-11eb-96a6-591b284fba85.png"
+            alt="">
+        <div class="info" id="yellowStraw-info">
+            <h2>Plastic Drinking Straw</h2>
+            <p>Made of common plastics such as...</p>
+            <ul>
+                <li>Polypropylene (one of the most commonly used plastics).
+                    <ul>
+                        <li>Found in: clothing, piping, rigid plastic bottles, yarn / synthetic
+                            textiles, lunchboxes and food containers, autoparts, etc.
+                        </li>
+                        <li>Produces microplastics that are carcinogenic.</li>
+                        <li id="bold">Can be recycled, but only around 1% is recyclable because of cost and use of
+                            multi-material lamenants (such as this), which cannot be separated for recycling.
+                        </li>
+                    </ul>
+                </li>
+                <li>Polyethylene (the most common plastic used today).
+                    <ul>
+                        <li>Breaks down in the sun and releases greenhouse gases.</li>
+                        <li>Used in: liquid product containers, toys, fast food cups and packaging, utensils, polyester,
+                            shopping bags, garbage bins, etc.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Coloured plastics are great for marketability but greatly limit the recycling potential.</p>
+        </div>
+
+        <img class="image" id="pillPack"
+            src="https://user-images.githubusercontent.com/82774916/115156109-c94c9800-a050-11eb-9cb4-31e923c09dae.png"
+            alt="">
+        <div class="info" id="pillPack-info">
+            <h2>Pill Blister Pack</h2>
+            <p>Made of a blend of materials such as...</p>
+            <ul>
+                <li>polyvinyl chloride (PVC): third-most widely produced synthetic.
+                    <ul>
+                        <li>Found in: piping, condiment packaging, drink bottles, toys, miscellaneous packaging, tubing,
+                            non-latex gloves, vinyl records, work boot components, etc.
+                        </li>
+                        <li>Can be recycled through mechanical (grinded melted and moulded) or chemical (chemically
+                            separated and remade into different materials) processes.</li>
+                        <li id="bold">Can be recycled, but only around 1% is recyclable because of cost and use of
+                            multi-material lamenants (such as this), which cannot be separated for recycling.
+                        </li>
+                        <li>When used together in lamenants with other plastics and materials such as this, it is near
+                            impossible to
+                            recycle.</li>
+                    </ul>
+                </li>
+                <li>Polyamide (a plastic commonly used in clothing/textiles).
+                    <ul>
+                        <li>Breaks down in the sun and releases greenhouse gases.</li>
+                        <li>Found in: jackets, leggings, sportswear, synthetic yarns / silks, etc.
+                        </li>
+                        <li>Is recyclable and follows a similar process to nylon recycling.
+                        </li>
+                        <li id="bold">Only about 18% is recycled.</li>
+                    </ul>
+                </li>
+                <li>Aluminum (100% infinitely recyclable).</li>
+                <ul id="listFix">
+                    <li>Easily and cost effectively recyclable.</li>
+                    <li id="bold">Recyclability is erased through multi-material lamenant.</li>
+                </ul>
+            </ul>
+            <p>Typically recyclable materials are designed into garbage through a lack of forethought.</p>
+
+        </div>
+
+        <img class="image" id="coffeeLid"
+            src="https://user-images.githubusercontent.com/82774916/115156148-eaad8400-a050-11eb-8524-fd20263cc6d5.png"
+            alt="">
+        <div class="info" id="coffeeLid-info">
+            <h2>Coffee Cup Lid</h2>
+            <p>Almost always made of...</p>
+            <ul>
+                <li>Polystyrene (commonly used to make styrofoam).
+                    <ul>
+                        <li>Found in: food packaging/containers, styrofoam of all kinds (cups, packaging, insulation,
+                            takeout containers, packing peanuts).
+                        </li>
+                        <li>Can be recycled however, recycled polystyrene cannot be used in direct contact with
+                            consumables, making its second life limited.</li>
+                        <li>Commonly recycled into fake-wood that can be seen used in park benches, and fencing.</li>
+                        <li id="bold">
+                            Not easily recyclable: requires specials centralized facility with an estimated 12%
+                            recycling rate.
+                        </li>
+                        <li id="bold">
+                            Makes up 60%-80% of marine litter.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Single use is a design choice.</p>
+        </div>
+
+        <img class="image" id="snackPack"
+            src="https://user-images.githubusercontent.com/82774916/115156174-0022ae00-a051-11eb-8424-cb97e76bb33a.png"
+            alt="">
+        <div class="info" id="snackPack-info">
+            <h2>Snack Wrapper</h2>
+            <p>Typically made up of two very common plastics...</p>
+            <ul>
+                <li>Polypropylene (one of the most commonly used plastics).
+                    <ul>
+                        <li>Found in: clothing, piping, rigid plastic bottles, yarn / synthetic
+                            textiles, lunchboxes and food containers, autoparts, etc.
+                        </li>
+                        <li>Produces microplastics that are carcinogenic.</li>
+                        <li id="bold">Can be recycled, but only around 1% is recyclable because of cost and use of
+                            multi-material lamenants (such as this), which cannot be separated for recycling.
+                        </li>
+                    </ul>
+                </li>
+                <li>Polyethylene (the most common plastic used today).
+                    <ul>
+                        <li>Breaks down in the sun and releases greenhouse gases.</li>
+                        <li>Used in: liquid product containers, toys, fast food cups and packaging, utensils,
+                            polyester,
+                            shopping bags, garbage bins, etc.
+                        </li>
+                        <li id="bold">Durable and recyclable, but only around 8% is recycled
+                        </li>
+                        <li id="bold">Non-biodegradable and highly toxic.
+                        </li>
+                        <li>
+                            High-density and low-density polyethylene can be recycled with the former theoretically able
+                            to be recycled 10 times at least.
+                        </li>
+                        <li>Material must be clean and dry to be recycled.</li>
+                        <li>
+                            Combinations of different plastics with different melting points in products makes recycling
+                            very difficult, as the materials are must be melted down and re-constructed.
+                            Food residue on packaging reduces recyclable material to the landfill.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Single use is a design choice.</p>
+        </div>
+
+        <img class="image" id="styrofoam1"
+            src="https://user-images.githubusercontent.com/82774916/115156251-58f24680-a051-11eb-8d6e-c8028aecee0c.png"
+            alt="">
+        <div class="info" id="styrofoam1-info">
+            <h2>Styrofoam Piece</h2>
+            <p>Extremely ecologically dangerous...</p>
+            <ul>
+                <li>Polystyrene.
+                    <ul>
+                        <li>Found in: food packaging/containers, styrofoam of all kinds (cups, packaging, insulation,
+                            takeout containers, packing peanuts).
+                        </li>
+                        <li>Can be recycled however, recycled polystyrene cannot be used in direct contact with
+                            consumables, making its second life limited.</li>
+                        <li>Commonly recycled into fake-wood that can be seen used in park benches, and fencing.</li>
+                        <li id="bold">
+                            Not easily recyclable: requires specials centralized facility with an estimated 12%
+                            recycling rate.
+                        </li>
+                        <li id="bold">
+                            Makes up 60%-80% of marine litter.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Lightness and brittleness make materials like this breakdown into microplastics extremely easily.</p>
+        </div>
+
+        <img class="image" id="yellowFoam"
+            src="https://user-images.githubusercontent.com/82774916/115156283-80e1aa00-a051-11eb-90c6-14df3e712682.png"
+            alt="">
+        <div class="info" id="yellowFoam-info">
+            <h2>Yellow Cushioning Foam</h2>
+            <p>Commonly made up of...</p>
+            <ul>
+                <li>Polyurethane.
+                    <ul>
+                        <li>Found in: tape, toys, paint/resins, shoes, sports equipment, industrial parts, rubber
+                            gloves, boots, wheels, automotive parts.
+                        </li>
+                        <li>Multiple different methods of recycling: chemical and mechanical.</li>
+                        <li id="bold">Most recycling is mechanical which is cheaper and results in a lower-value product
+                            Only around 10% or polyurethane is recycled.</li>
+                        <li>
+                            Commonly recycled into carpeting, cushioning, or pet beds.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Found in almost all of your furniture cushioning.</p>
+        </div>
+
+        <img class="image" id="grainyFoam"
+            src="https://user-images.githubusercontent.com/82774916/115156318-acfd2b00-a051-11eb-87f7-d83ba72a8f53.png"
+            alt="">
+        <div class="info" id="grainyFoam-info">
+            <h2>Styrofoam Piece</h2>
+            <p>Extremely ecologically dangerous...</p>
+            <ul>
+                <li>Polystyrene.
+                    <ul>
+                        <li>Found in: food packaging/containers, styrofoam of all kinds (cups, packaging, insulation,
+                            takeout containers, packing peanuts).
+                        </li>
+                        <li>Can be recycled however, recycled polystyrene cannot be used in direct contact with
+                            consumables, making its second life limited.</li>
+                        <li>Commonly recycled into fake-wood that can be seen used in park benches, and fencing.</li>
+                        <li id="bold">
+                            Not easily recyclable: requires specials centralized facility with an estimated 12%
+                            recycling rate.
+                        </li>
+                        <li id="bold">
+                            Makes up 60%-80% of marine litter.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Lightness and brittleness make materials like this breakdown into microplastics extremely easily.</p>
+        </div>
+
+        <img class="image" id="styrofoam2"
+            src="https://user-images.githubusercontent.com/82774916/115156525-a3c08e00-a052-11eb-856b-3a0a6e884875.png"
+            alt="">
+        <div class="info" id="styrofoam2-info">
+            <h2>Styrofoam Cup</h2>
+            <p>Extremely ecologically dangerous...</p>
+            <ul>
+                <li>Polystyrene.
+                    <ul>
+                        <li>Found in: food packaging/containers, styrofoam of all kinds (cups, packaging, insulation,
+                            takeout containers, packing peanuts).
+                        </li>
+                        <li>Can be recycled however, recycled polystyrene cannot be used in direct contact with
+                            consumables, making its second life limited.</li>
+                        <li>Commonly recycled into fake-wood that can be seen used in park benches, and fencing.</li>
+                        <li id="bold">
+                            Not easily recyclable: requires specials centralized facility with an estimated 12%
+                            recycling rate.
+                        </li>
+                        <li id="bold">
+                            Makes up 60%-80% of marine litter.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Lightness and brittleness make materials like this breakdown into microplastics extremely easily.</p>
+        </div>
+
+        <img class="image" id="candyWrapper"
+            src="https://user-images.githubusercontent.com/82774916/115156501-7ffd4800-a052-11eb-9764-e042c1de9cbf.png"
+            alt="">
+        <div class="info" id="candyWrapper-info">
+            <h2>Candy Wrapper</h2>
+            <p>Almost always made of metallised plastic...</p>
+            <ul>
+                <li>Polypropylene (one of the most commonly used plastics).
+                    <ul>
+                        <li>Found in: clothing, piping, rigid plastic bottles, yarn / synthetic
+                            textiles, lunchboxes and food containers, autoparts, etc.
+                        </li>
+                        <li>Produces microplastics that are carcinogenic.</li>
+                        <li id="bold">Can be recycled, but only around 1% is recycled because of cost and use of
+                            multi-material lamenants (such as this), which cannot be separated for recycling.
+                        </li>
+                    </ul>
+                </li>
+                <li>Aluminum (100% infinitely recyclable).</li>
+                <ul id="listFix">
+                    <li>Easily and cost effectively recyclable.</li>
+                    <li id="bold">Recyclability is erased through multi-material lamenant.</li>
+                </ul>
+            </ul>
+            <p>Single use is a design choice.</p>
+        </div>
+    </div>
+    <a href="resourcesIndex.html" id="resourceLink">
+        Resources for Circularity
+    </a>
+    <script>
+        // use the names you used above, and add the url to the image to show when hovering
+        const hoverImages = {
+            //can: 'https://user-images.githubusercontent.com/15111129/110058197-483d8800-7da5-11eb-88c3-6b7090c310c4.png',
+            background: 'https://user-images.githubusercontent.com/82774916/115155557-8f7a9200-a04e-11eb-8cf3-2f83b8d751a2.png',
+            yellowBag: 'https://user-images.githubusercontent.com/82774916/115158057-53e5c500-a05a-11eb-90a4-6ec58a1bfdf1.png',
+            deflatedBall: 'https://user-images.githubusercontent.com/82774916/115158083-7841a180-a05a-11eb-9c52-ebb6ee3002df.png',
+            hairBag: 'https://user-images.githubusercontent.com/82774916/115158095-855e9080-a05a-11eb-8d0f-3c9e618104db.png',
+            blueFabric: 'https://user-images.githubusercontent.com/82774916/115158103-93141600-a05a-11eb-9196-9ea9a078851c.png',
+            straw: 'https://user-images.githubusercontent.com/82774916/115158115-9f986e80-a05a-11eb-8011-1332080caf7c.png',
+            yellowStraw: 'https://user-images.githubusercontent.com/82774916/115158124-a921d680-a05a-11eb-9363-79c6b78bf51d.png',
+            pillPack: 'https://user-images.githubusercontent.com/82774916/115158136-c0f95a80-a05a-11eb-9acb-a4e08e1eaa45.png',
+            coffeeLid: 'https://user-images.githubusercontent.com/82774916/115158150-d3739400-a05a-11eb-8fd7-751ae8a89331.png',
+            snackPack: 'https://user-images.githubusercontent.com/82774916/115158154-dc646580-a05a-11eb-993b-f816f3165bd8.png',
+            styrofoam1: 'https://user-images.githubusercontent.com/82774916/115158164-eab28180-a05a-11eb-9e84-babc9f0a99d1.png',
+            yellowFoam: 'https://user-images.githubusercontent.com/82774916/115158173-f69e4380-a05a-11eb-9462-a020fd6e015c.png',
+            grainyFoam: 'https://user-images.githubusercontent.com/82774916/115158184-0027ab80-a05b-11eb-97fa-7ca2fb8713a4.png',
+            styrofoam2: 'https://user-images.githubusercontent.com/82774916/115158194-09b11380-a05b-11eb-9322-d7c0a30b7400.png',
+            candyWrapper: 'https://user-images.githubusercontent.com/82774916/115158214-146ba880-a05b-11eb-8f42-9bb44bb9454c.png',
+        };
+
+        function startHover(name) {
+            const image = document.querySelector(`img#${name}`);
+            // stash away the original image
+            image.dataset.ogSrc = image.src;
+            // set the slightly lighter version as src
+            image.src = hoverImages[name];
+        }
+
+        function stopHover(name) {
+            const image = document.querySelector(`img#${name}`);
+            // restore the original image we stash above
+            image.src = image.dataset.ogSrc;
+        }
+
+        function startFocus(name) {
+            const imageCheck = document.querySelector('#' + name);
+            if (imageCheck.className.includes('hidden')) {
+                stopFocus();
+                return;
+            }
+
+            const info = document.querySelector('#' + name + '-info');
+            info.className += ' active';
+
+
+            const images = document.querySelectorAll('.image');
+            for (let i = 0; i < images.length; i += 1) {
+                const image = images[i];
+                if (image.id !== name) {
+                    image.className += ' hidden';
+
+                }
+            }
+            const background = document.querySelector('#background');
+
+            // if we haven't stashed the original image already
+            if (!background.dataset.ogSrc) {
+                // stash it away
+                background.dataset.ogSrc = background.src;
+            }
+            background.src = hoverImages.background;
+        }
+
+        function stopFocus() {
+            const infos = Array.from(document.querySelectorAll('.info'));
+            for (let i = 0; i < infos.length; i += 1) {
+                const info = infos[i];
+                info.className = info.className.replaceAll('active', '');
+            }
+
+            const images = document.querySelectorAll('.image');
+            for (let i = 0; i < images.length; i += 1) {
+                const image = images[i];
+                image.className = image.className.replaceAll('hidden', '');
+            }
+
+            const background = document.querySelector('#background');
+
+            // if we've stashed away the original image
+            if (background.dataset.ogSrc) {
+                // restore
+                background.src = background.dataset.ogSrc;
+                // remove the stashed value from the HTML tag
+                delete background.dataset.ogSrc;
+            }
+        }
+
+        // complete ignore if you wish. This is a silly optimization
+        (function preloadImages() {
+            const images = Object.values(hoverImages);
+            images.forEach(function (url) {
+                const img = document.createElement('img');
+                img.src = url;
+            })
+        })();
+
+    </script>
+</body>
+
+</html>

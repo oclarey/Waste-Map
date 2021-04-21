@@ -1,0 +1,381 @@
+/*@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Bold.woff2') format('woff2'),
+        url('WhyteInktrap-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}*/
+
+body {
+    margin: 0;
+    width: 125vw;
+    height: 160vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* UPDATE THIS WITH YOUR IMAGE'S WIDTH AND HEIGHT */
+  .container {
+    width: 2700px;
+    height: 1800px;
+    position: relative;
+  }
+  
+  area {
+    cursor: pointer;
+  }
+  
+  .info {
+    display: none;
+    position: absolute;
+    color: #012357;
+    background: rgba(255,255,255,0.6);
+    padding: 8px 16px;
+    width: 25vw;
+    border-radius: 7px;
+  }
+
+  .info > p {
+    font-family: adobe-caslon-pro, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4em;
+    
+  }
+
+  .info > ul {
+    font-family: adobe-caslon-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+  }
+
+  .info > ul > ul {
+    font-family: adobe-caslon-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+  }
+
+  #bold {
+    font-family: adobe-caslon-pro, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+  }
+
+  #listFix {
+    font-family: adobe-caslon-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+  }
+
+  .info > h2 {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Bold.woff2') format('woff2'),
+        url('WhyteInktrap-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    font-size: 1.8em;
+  }
+  
+  .info.active {
+    display: initial;
+  }
+  
+  .image {
+    pointer-events: none;
+    position: absolute;
+  }
+  
+  .image.hidden {
+    visibility: hidden;
+  }
+  
+  
+  /* UPDATE THIS WITH YOUR IMAGE'S WIDTH AND HEIGHT */
+  #background {
+    width: 2700px;
+    height: 1800px;
+  }
+  
+ /* #can {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+/*  width: 295px;
+    height: 230px;
+    pointer-events: none;
+    position: absolute; */
+    
+    /* POSITION FROM TOP LEFT CORNER */
+ /*   top: 379px;
+    left: 432px;
+  }
+  
+  #can-info {
+    /* POSITION FROM TOP LEFT CORNER */
+ /*   top: 428px;
+    left: 732px;
+  }*/
+
+  #yellowBag {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 568px;
+    height: 536px;
+    
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 929px;
+    left: 1462px;
+  }
+  
+  #yellowBag-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 800px;
+    left: 2120px;
+    width: 25vw;
+  }
+
+  #deflatedBall {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 596px;
+    height: 293px;
+    
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 1508px;
+    left: 1963px;
+  }
+  
+  #deflatedBall-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 975px;
+    left: 975px;
+    width: 48vw;
+  }
+
+  #hairBag {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 354px;
+    height: 322px;
+    
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 1174px;
+    left: 1051px;
+  }
+  
+  #hairBag-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 1000px;
+    left: 1430px;
+    width: 38vw;
+  }
+
+  #blueFabric {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 409px;
+    height: 264px;
+    
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 10px;
+    left: 146px;
+  }
+  
+  #blueFabric-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 100px;
+    left: 620px;
+    width: 49vw;
+  }
+
+  #straw {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 166px;
+    height: 395px;
+    
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 0px;
+    left: 1147px;
+  }
+  
+  #straw-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 70px;
+    left: 1350px;
+    width: 40vw;
+  }
+
+  #yellowStraw {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 928px;
+    height: 422px;
+    
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 187px;
+    left: 1475px;
+  }
+  
+  #yellowStraw-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 455px;
+    left: 1200px;
+    width: 28vw;
+  }
+
+  #pillPack {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 226px;
+    height: 240px;
+    
+    top: 1029px;
+    left: 1987px;
+  }
+  
+  #pillPack-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 780px;
+    left: 1160px;
+    width: 40vw;
+  }
+
+  #coffeeLid {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 170px;
+    height: 294px;
+    
+    top: 1179px;
+    left: 1361px;
+  }
+  
+  #coffeeLid-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 1115px;
+    left: 1590px;
+    width: 38vw
+  }
+
+  #snackPack {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 646px;
+    height: 624px;
+    
+    top: 603px;
+    left: 419px;
+  }
+  
+  #snackPack-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 779px;
+    left: 1040px;
+    width: 43vw;
+  }
+
+  #styrofoam1 {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 282px;
+    height: 422px;
+    
+    top: 1027px;
+    left: 651px;
+  }
+  
+  #styrofoam1-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 1100px;
+    left: 997px;
+    width: 36vw;
+  }
+
+  #yellowFoam {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 180px;
+    height: 360px;
+    
+    top: 307px;
+    left: 195px;
+  }
+  
+  #yellowFoam-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 300px;
+    left: 467px;
+  }
+
+  #grainyFoam {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 228px;
+    height: 330px;
+    
+    top: 923px;
+    left: 241px;
+  }
+  
+  #grainyFoam-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 920px;
+    left: 544px;
+  }
+
+  #styrofoam2 {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 252px;
+    height: 246px;
+    
+    top: 1169px;
+    left: 147px;
+  }
+  
+  #styrofoam2-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 1150px;
+    left: 464px;
+    width: 36vw;
+  }
+
+  #candyWrapper {
+    /* WIDTH AND HEIGHT OF CUT OUT */
+    width: 294px;
+    height: 120px;
+    
+    top: 243px;
+    left: 203px;
+  }
+  
+  #candyWrapper-info {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 250px;
+    left: 466px;
+  }
+
+  #resourceLink {
+    /* POSITION FROM TOP LEFT CORNER */
+    top: 1695px;
+    left: 28px;
+    display: block;
+    position: absolute;
+    color: #eeeeee;
+    padding: 8px 16px;
+    border-radius: 5px;
+    z-index:100;
+
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Light.woff2') format('woff2'),
+        url('WhyteInktrap-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    font-size: 2em;
+    /* text-shadow: 2px 2px 5px black; */
+    background: rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+  }
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: line-through;
+    }
+

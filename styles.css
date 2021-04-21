@@ -348,11 +348,17 @@ body {
     left: 466px;
   }
 
+  @font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Light.ttf'),
+        url('WhyteInktrap-bold.ttf');
+      }
+
   #resourceLink {
     /* POSITION FROM TOP LEFT CORNER */
-    top: 1695px;
+    bottom: 0px;
     left: 28px;
-    display: block;
+    /* display: block; */
     position: absolute;
     color: #eeeeee;
     padding: 8px 16px;
@@ -360,8 +366,6 @@ body {
     z-index:100;
 
     font-family: 'Whyte Inktrap';
-    src: url('WhyteInktrap-Light.woff2') format('woff2'),
-        url('WhyteInktrap-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;

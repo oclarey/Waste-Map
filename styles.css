@@ -350,8 +350,8 @@ body {
 
   @font-face {
     font-family: 'Whyte Inktrap';
-    src: url('WhyteInktrap-Light.ttf'),
-        url('WhyteInktrap-bold.ttf');
+    src: url('WhyteInktrap-Regular.ttf'),
+        url('WhyteInktrap-Bold.ttf');
       }
 
   #resourceLink {

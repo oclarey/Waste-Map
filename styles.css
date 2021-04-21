@@ -7,13 +7,19 @@
     font-display: swap;
 }*/
 
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('WhyteInktrap-Regular.ttf'),
+      url('WhyteInktrap-Bold.ttf');
+    }
+
 body {
     margin: 0;
-    width: 125vw;
+    /* width: 125vw;
     height: 160vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
   }
   
   /* UPDATE THIS WITH YOUR IMAGE'S WIDTH AND HEIGHT */
@@ -75,8 +81,7 @@ body {
 
   .info > h2 {
     font-family: 'Whyte Inktrap';
-    src: url('WhyteInktrap-Bold.woff2') format('woff2'),
-        url('WhyteInktrap-Bold.woff') format('woff');
+    src: url('WhyteInktrap-Bold.ttf');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -135,7 +140,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 800px;
     left: 2120px;
-    width: 25vw;
+    width: 500px;
   }
 
   #deflatedBall {
@@ -152,7 +157,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 975px;
     left: 975px;
-    width: 48vw;
+    width: 1000px;
   }
 
   #hairBag {
@@ -169,7 +174,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 1000px;
     left: 1430px;
-    width: 38vw;
+    width: 700px;
   }
 
   #blueFabric {
@@ -186,7 +191,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 100px;
     left: 620px;
-    width: 49vw;
+    width: 800px;
   }
 
   #straw {
@@ -203,7 +208,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 70px;
     left: 1350px;
-    width: 40vw;
+    width: 700px;
   }
 
   #yellowStraw {
@@ -220,7 +225,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 455px;
     left: 1200px;
-    width: 28vw;
+    width: 650px;
   }
 
   #pillPack {
@@ -236,7 +241,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 780px;
     left: 1160px;
-    width: 40vw;
+    width: 800px;
   }
 
   #coffeeLid {
@@ -252,7 +257,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 1115px;
     left: 1590px;
-    width: 38vw
+    width: 700px;
   }
 
   #snackPack {
@@ -268,7 +273,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 779px;
     left: 1040px;
-    width: 43vw;
+    width: 800px;
   }
 
   #styrofoam1 {
@@ -284,7 +289,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 1100px;
     left: 997px;
-    width: 36vw;
+    width: 785px;
   }
 
   #yellowFoam {
@@ -300,6 +305,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 300px;
     left: 467px;
+    width: 525px;
   }
 
   #grainyFoam {
@@ -315,6 +321,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 920px;
     left: 544px;
+    width: 700px;
   }
 
   #styrofoam2 {
@@ -330,7 +337,7 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 1150px;
     left: 464px;
-    width: 36vw;
+    width: 700px;
   }
 
   #candyWrapper {
@@ -346,13 +353,8 @@ body {
     /* POSITION FROM TOP LEFT CORNER */
     top: 250px;
     left: 466px;
+    width: 450px;
   }
-
-  @font-face {
-    font-family: 'Whyte Inktrap';
-    src: url('WhyteInktrap-Regular.ttf'),
-        url('WhyteInktrap-Bold.ttf');
-      }
 
   #resourceLink {
     /* POSITION FROM TOP LEFT CORNER */
